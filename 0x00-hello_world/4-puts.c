@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-puts("\"proramming is like building a multilingual puzzle\n");
+puts("\"Proramming is like building a multilingual puzzle\n");
 return (0);
 }
