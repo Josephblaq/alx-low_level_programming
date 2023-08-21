@@ -6,8 +6,7 @@
 
 int main(void)
 {
-	char b;
-	char c;
+	char b, c;
 
 	b = 'a';
 	c = 'A';
@@ -16,14 +15,14 @@ int main(void)
 		(b <= 'z')
 		{
 			putchar(b);
-				b++;
+			b++;
 		}
 	while
-		(c <= 'z')
+		(c <= 'Z')
 		{
 			putchar(c);
-				c++;
-		putchar('\n');
+			c++;
 		}
+	putchar('\n');
 	return (0);
 }
