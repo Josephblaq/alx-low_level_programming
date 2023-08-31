@@ -1,25 +1,51 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _pow_recursion - function that return length of a string.
- * @x: integer base.
- * @y: integer power to.
- *
- * Return: reult of num1 power to num2.
+ * root_square - Returns the natural square root of a number
+ * otherwise return 0.
+ * @n: result to find.
+ * @num: number multiply by itself give the result.
+ * Return: root square of the number.
  */
-int _pow_recursion(int x, int y)
+int root_square(int num, int n)
 {
-	if (y == 0)
+	if (num * num == n)
 	{
-		return (1);
+		return (num);
 	}
-	if (y < 0)
+	else if (num * num > n)
 	{
 		return (-1);
 	}
 	else
 	{
-		y--;
-		return (x * _pow_recursion(x, y));
+		num++;
+	}
+	return (root_square(num, n));
+}
+
+/**
+ * _sqrt_recursion - function that give natural square root of a number
+ * @n: number to find root square.
+ * Return: natural square root of a number.
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	if (n == 0)
+	{
+		return (0);
+	}
+	if (n == 1)
+	{
+		return (1);
+	}
+	else
+	{
+		return (root_square(2, n));
 	}
 }
