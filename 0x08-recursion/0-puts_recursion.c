@@ -1,10 +1,11 @@
 #include <stdio.h>
+
 /**
- * main - check for end of string
- * print a new line
- * print the current character and advance the pointer
- * recursively call the function with the next character
- */
+ * _puts_recursion - prints a string followed by a new line using recursion.
+ * @s: the string to print.
+ *
+ * Return: void.
+ **/
 
 void _puts_recursion(char *s)
 {
